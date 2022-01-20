@@ -1,0 +1,14 @@
+# action.yml
+name: "static action"
+description: "convert templates into html"
+inputs:
+  path:
+    description: "source file path"
+    required: true
+    default: "."
+outputs:
+  count:
+    description: "number of successfully generated files"
+runs:
+  using: "docker"
+  image: "docker://ghcr.io/stephenhu/static:latest"
