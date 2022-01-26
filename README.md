@@ -8,7 +8,7 @@ directory where source files exist
 
 ## output
 
-the number of successfully generated files
+filenames of generated static files
 
 ## example usage
 
