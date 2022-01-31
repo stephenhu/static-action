@@ -1,3 +1,3 @@
 FROM ghcr.io/stephenhu/static:latest
 
-ENTRYPOINT ["static version"]
+ENTRYPOINT ["static"]

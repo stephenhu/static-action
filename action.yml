@@ -1,14 +1,15 @@
 # action.yml
 name: "static action"
-description: "convert templates into html"
+description: "runs static build against markdown and amber templates to generate a single page"
+author: "stephenhu"
 inputs:
-  path:
+  source:
     description: "source file path"
     required: true
     default: "."
-outputs:
-  files:
-    description: "generated static filenames"
 runs:
   using: "docker"
   image: "docker://ghcr.io/stephenhu/static:latest"
+brand:
+  icon: "layers"
+  color: "blue"
